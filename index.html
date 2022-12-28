@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .outer {
+            height: 100vh;
+            width: 100%;
+        }
+
+        nav {
+            height: 10%;
+            background-color: #232F3E;
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main {
+            height: 90%;
+        }
+        .star{
+            font-size: 30px;
+        }
+        .tri {
+            width: 0;
+            height: 0;
+        }
+
+        .triangle-1 {
+
+            border-left: 65px solid transparent;
+            border-right: 65px solid transparent;
+            border-bottom: 65px solid green;
+            
+        }
+
+        .triangle-2 {
+
+            border-left: 95px solid transparent;
+            border-right: 95px solid transparent;
+            border-bottom: 95px solid green;
+            margin-top: -50px;
+
+        }
+
+        .triangle-3 {
+
+            border-left: 125px solid transparent;
+            border-right: 125px solid transparent;
+            border-bottom: 125px solid green;
+            margin-top: -70px;
+
+        }
+
+        .triangle-4 {
+
+            border-left: 155px solid transparent;
+            border-right: 155px solid transparent;
+            border-bottom: 155px solid green;
+            margin-top: -90px;
+
+        }
+
+        .column {
+            flex-direction: column;
+        }
+        .circle{
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            background-color:fuchsia;
+        }
+        .box-1{
+            justify-content: space-between;
+            width: 155px;
+        }
+        .box-2{
+            justify-content: space-between;
+            width: 215px;
+        }
+        .box-3{
+            justify-content: space-between;
+            width: 275px;
+        }
+        .box-4{
+            justify-content: space-between;
+            width: 335px;
+        }
+        .wood{
+            width: 54px;
+            height: 54px;
+            background-color: brown;
+            margin-top: -22px;
+            z-index: -1;
+        }
+        @media (max-width:800px) {
+        main{
+            transform: scale(0.5);
+        }
+      }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <nav class="flex">
+            <h1>Q3) CHRISTMAS TREE</h1>
+        </nav>
+        <main class="flex column">
+            <div class="star">&#11088;</div>
+            <div class="triangle-1 tri"></div>
+            <div class="box-1 flex">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="triangle-2 tri"></div>
+            <div class="box-2 flex">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="triangle-3 tri"></div>
+            <div class="box-3 flex">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="triangle-4 tri"></div>
+            <div class="box-4 flex">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="wood">
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
